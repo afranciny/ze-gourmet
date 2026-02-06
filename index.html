@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zé Gourmet - Coleta de Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="menu" class="screen">
+            <h1>ZÉ GOURMET</h1>
+            <p>Coleta de Café</p>
+            <p class="instructions">Use as setas ou WASD para mover</p>
+            <p class="instructions">Colete o café antes que caia no chão!</p>
+            <button id="startButton">INICIAR JOGO</button>
+        </div>
+        <div id="gameOver" class="screen hidden">
+            <h1>GAME OVER</h1>
+            <p>Pontuação Final: <span id="finalScore">0</span></p>
+            <button id="restartButton">JOGAR NOVAMENTE</button>
+        </div>
+    </div>
+    <script src="player.js"></script>
+    <script src="coffee.js"></script>
+    <script src="gameManager.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
